@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,17 +7,38 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --neutral: hsl(0, 0%, 100%);
+  --neutral-300: hsl(252, 6%, 83%);
+  --neutral-500: hsl(245, 15%, 58%);
+  --neutral-700: hsl(245, 19%, 35%);
+  --neutral-900: hsl(248, 70%, 10%);
+  --orange-500: hsl(7, 88%, 67%);
+  --orange-700: hsl(7, 71%, 60%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --neutral: hsl(0, 0%, 100%);
+    --neutral-300: hsl(252, 6%, 83%);
+    --neutral-500: hsl(245, 15%, 58%);
+    --neutral-700: hsl(245, 19%, 35%);
+    --neutral-900: hsl(248, 70%, 10%);
+    --orange-500: hsl(7, 88%, 67%);
+    --orange-700: hsl(7, 71%, 60%);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inconsolata", serif;
+}
+
+.text-grandient {
+  background-image: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
