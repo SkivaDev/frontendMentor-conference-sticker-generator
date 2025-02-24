@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background-desktop: url('/images/background-desktop.png') no-repeat center center / cover;
+  --background-tablet: url('/images/background-tablet.png') no-repeat center center / cover;
+  --background-mobile: url('/images/background-mobile.png') no-repeat center center / cover;
   --foreground: #171717;
   --neutral: hsl(0, 0%, 100%);
   --neutral-300: hsl(252, 6%, 83%);
@@ -18,7 +20,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background-desktop: url('/images/background-desktop.png') no-repeat center center / cover;
+    --background-tablet: url('/images/background-tablet.png') no-repeat center center / cover;
+    --background-mobile: url('/images/background-mobile.png') no-repeat center center / cover;
     --foreground: #ededed;
     --neutral: hsl(0, 0%, 100%);
     --neutral-300: hsl(252, 6%, 83%);
@@ -30,9 +34,16 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background-desktop); */
+  background: white;
   font-family: "Inconsolata", serif;
 }
 
