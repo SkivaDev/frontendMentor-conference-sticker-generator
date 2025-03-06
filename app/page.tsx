@@ -14,7 +14,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-[40px] w-full max-w-[495px] mx-auto">
+          <div className="mt-[27px] w-full max-w-[492px] mx-auto">
             <Form />
           </div>
         </div>
