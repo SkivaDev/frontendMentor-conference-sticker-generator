@@ -43,7 +43,7 @@
 body {
   color: var(--foreground);
   /* background: var(--background-desktop); */
-  background: white;
+  background: gray;
   font-family: "Inconsolata", serif;
 }
 
