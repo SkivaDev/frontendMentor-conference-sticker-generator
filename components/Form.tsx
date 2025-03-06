@@ -6,7 +6,7 @@ const Form = () => {
     // const { register, handleSubmit } = useForm();
     
   return (
-    <form action="">
+    <form action="" className='bg-red-300 p-4'>
         <fieldset>
           <div>
             <label htmlFor="">Upload Avatar</label>
